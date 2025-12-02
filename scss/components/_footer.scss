@@ -1,0 +1,60 @@
+.footer {
+  background-image: url(../images/footer-bg.png);
+  background-color: var(--color-primery-dark);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 32px 0;
+  position: relative;
+}
+
+.footer::after,
+.footer::before {
+  position: absolute;
+  background-repeat: no-repeat;
+  bottom: 0;
+  content: '';
+}
+
+.footer::before {
+  width: 180px;
+  left: 0;
+  height: 120px;
+  background-image: url(images/bread-one.png);
+}
+
+.footer::after {
+  width: 380px;
+  right: 0;
+  height: 190px;
+  background-image: url(images/bread-two.png);
+}
+
+.footer-container {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-nav {
+  flex-basis: 50%;
+  display: flex;
+  gap: 16px;
+}
+
+.footer-adress {
+  flex-basis: 50%;
+  display: flex;
+  gap: 16px;
+}
+
+.footer-links {
+  flex-grow: 1;
+}
+
+.footer-logo {
+  flex-grow: 1;
+}
+
+.footer-info {
+  flex-grow: 1;
+}
