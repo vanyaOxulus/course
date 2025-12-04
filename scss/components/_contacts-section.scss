@@ -1,5 +1,9 @@
 .contact-section {
-  padding-bottom: 96px;
+  padding-bottom: 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-bottom: 96px;
+  }
 }
 
 .contact-title {
@@ -11,11 +15,32 @@
 
 .contact-conteiner {
   display: flex;
-  gap: 32px;
+  gap: 24px;
+  flex-direction: column;
+
+  @media screen and (min-width: $bp-tablet) {
+    flex-direction: row;
+    gap: 32px;
+  }
 }
 
 .contact-map {
   flex-shrink: 0;
   border: 0;
-  border-radius: 16px;
+  margin: 0 -24px;
+  height: 176px;
+  border-radius: 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    width: 216px;
+    height: 400px;
+    margin: auto 0;
+    border-radius: 16px;
+  }
+
+  @media screen and (min-width: $bp-desctop) {
+    width: 600px;
+    height: 595px;
+    border-radius: 16px;
+  }
 }

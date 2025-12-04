@@ -7,8 +7,8 @@
   color: var(--color-brand-normal);
 }
 
-.form-field {
-  margin-bottom: 32px;
+.contact-call__form-field {
+  margin-bottom: 24px;
   position: relative;
   font-size: 16px;
   line-height: 1.17;
@@ -39,9 +39,14 @@
 }
 
 .button-form {
-  display: block;
   margin: 0 auto;
   margin-bottom: 24px;
+}
+
+.contact-call__button-form {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 16px;
 }
 
 .form-terms {

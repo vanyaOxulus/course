@@ -1,11 +1,5 @@
 .formats-list {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.formats-item {
-  flex-basis: calc((100% - 40px) / 3);
+  margin-bottom: 32px;
 }
 
 .format-title {
@@ -30,14 +24,7 @@
   padding: 24px;
   height: 444px;
   border-radius: 16px;
-  background-image: linear-gradient(
-    180deg,
-    rgba(49, 38, 26, 0) 55.21%,
-    rgba(49, 38, 26, 0.71) 72.92%,
-    var(--color-primery-dark)
-  );
   transition: transform 0.3s;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -85,21 +72,20 @@
   background-size: cover;
 }
 
-.format-card:hover {
-  transform: scale(1.05);
-}
-
-.format-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 16px;
-}
-
-.formats-container {
+.formats-slider {
   display: flex;
   gap: 32px;
   align-items: center;
+}
+
+.formats-container {
+  overflow: hidden;
+}
+
+.formats-section__button {
+  display: none;
+
+  @media screen and (min-width: $bp-tablet) {
+    display: flex;
+  }
 }

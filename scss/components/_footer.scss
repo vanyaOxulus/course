@@ -32,19 +32,26 @@
 
 .footer-container {
   display: flex;
+  flex-direction: column;
   gap: 16px;
+
+  @media screen and (min-width: $bp-tablet) {
+    flex-direction: row;
+  }
 }
 
-.footer-nav {
-  flex-basis: 50%;
-  display: flex;
-  gap: 16px;
-}
-
+.footer-nav,
 .footer-adress {
-  flex-basis: 50%;
   display: flex;
+  flex-direction: column;
   gap: 16px;
+  text-align: center;
+
+  @media screen and (min-width: $bp-tablet) {
+    flex-direction: row;
+    flex-basis: 50%;
+    text-align: left;
+  }
 }
 
 .footer-links {

@@ -3,25 +3,55 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 32px;
+  padding-top: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: $bp-desctop) {
+    padding-top: 32px;
+  }
+
+  .header__container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .header__nav {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .header__manu {
+    display: none;
+
+    @media screen and (min-width: $bp-desctop) {
+      display: flex;
+      gap: 64px;
+      flex-grow: 1;
+      justify-content: center;
+    }
+  }
+
+  .header__button {
+    display: none;
+    @media screen and (min-width: $bp-desctop) {
+      display: block;
+    }
+  }
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
+.header__berger-button {
+  background-color: transparent;
+  border: none;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  fill: var(--color-primery-light);
 
-.header-nav {
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.header-manu {
-  display: flex;
-  gap: 64px;
-  flex-grow: 1;
-  justify-content: center;
+  @media screen and (min-width: $bp-desctop) {
+    display: none;
+  }
 }
